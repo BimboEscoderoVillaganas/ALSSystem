@@ -81,8 +81,9 @@
               </div>
               
 
-
-              <button>Button name</button>
+              <a href="../login.php" class="button-link">
+                  <button>Get Started</button>
+              </a>
             </div>
               <div class="image">
               <img src="../assets/images/alslanding.jpg">
