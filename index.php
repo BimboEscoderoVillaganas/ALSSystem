@@ -7,6 +7,7 @@
 
     <!--Bootsrap CSS--><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/nav_active.css">
 
     <title>Household Profiling</title>
 
@@ -19,11 +20,9 @@
     <span class="red">A</span><span class="green">L</span><span class="blue">S</span>
   </b></a>
   <ul class="links">
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Work</li>
-    <li>Info</li>
-    <li>Get Started</li>
+    <li><a href="index.php" class="active">Home</a></li>
+    <li><a href="landing_page_pages/aboutus.php">About Us</a></li>
+    <li><a href="login.php">Get Started</a></li>
   </ul>
 </div>
 
@@ -33,7 +32,10 @@
             <div class="info">
               <h1>Mapping the Path to Learning: The ALS Household Profiling System for Barangay Tankulan</h1>
               <p>The ALS Household Profiling System is a vital tool for identifying and supporting out-of-school youth in Barangay Tankulan. This innovative system leverages data analytics to create detailed profiles of each household, revealing the unique needs and circumstances of young people who are not currently enrolled in traditional educational settings. By understanding the specific challenges, aspirations, and potential barriers faced by these individuals, the ALS program can tailor its resources and interventions to effectively reach and empower out-of-school youth in Barangay Tankulan.</p>
-              <button>Button name</button>
+              <a href="login.php" class="button-link">
+                  <button>Get Started</button>
+              </a>
+
             </div>
             <div class="image">
               <img src="assets/images/alslanding.jpg">
