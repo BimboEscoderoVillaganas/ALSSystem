@@ -42,20 +42,20 @@
                 <thead>
                     <tr>
                         <th>No.</th>
-                        <th>Household Members</th>
-                        <th>Relationship to Head</th>
+                        <th>Household <br> Members</th>
+                        <th>Relationship <br> to Head</th>
                         <th>Birthdate</th>
                         <th>Age</th>
                         <th>Gender</th>
-                        <th>Civil Status</th>
-                        <th>Person w/ Disability</th>
+                        <th>Civil <br> Status</th>
+                        <th>Person w/ <br> Disability</th>
                         <th>Ethnicity</th>
                         <th>Religion</th>
-                        <th>Highest Grade/Year Completed</th>
-                        <th>Currently Attending School?</th>
-                        <th>Level Enrolled</th>
-                        <th>Reasons for Not Attending School</th>
-                        <th>Can Read/Write Simple Message in any Language?</th>
+                        <th>Highest <br> Grade/Year <br> Completed</th>
+                        <th>Currently <br> Attending <br> School?</th>
+                        <th>Level <br> Enrolled</th>
+                        <th>Reasons for <br> Not Attending <br> School</th>
+                        <th>Can Read/Write <br> Simple Message <br> in any Language?</th>
                         <th>Occupation</th>
                         <th>Work</th>
                         <th>Status</th>
