@@ -3,51 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/login.css">
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/login.css">
+    <link rel="stylesheet" href="src/css/nav_active.css">
+    <link href="src/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="src/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
     <title>Login</title>
+    <style>
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-<div class="page">
-  <div class="container">
-    <div class="left">
-      <div class="login">Login</div>
-      <div class="eula"><h3>Note:</h3> <p>Accounts are granted by the admin. If you do not have an account yet, you may request one by clicking <a href="#">here</a>.</p></div>
-        <a href="index.php" class="button-link">Back to Home</a>
-    </div>
-    <div class="right">
-      <svg viewBox="0 0 320 300">
-        <defs>
-          <linearGradient
-                          inkscape:collect="always"
-                          id="linearGradient"
-                          x1="13"
-                          y1="193.49992"
-                          x2="307"
-                          y2="193.49992"
-                          gradientUnits="userSpaceOnUse">
-            <stop
-                  style="stop-color:#ff00ff;"
-                  offset="0"
-                  id="stop876" />
-            <stop
-                  style="stop-color:#ff0000;"
-                  offset="1"
-                  id="stop878" />
-          </linearGradient>
-        </defs>
-        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-      </svg>
-      <div class="form">
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
-        <label for="password">Password</label>
-        <input type="password" id="password" required>
-        <input type="submit" id="submit" value="Login">
-      </div>
-    </div>
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
   </div>
-</div>
+  <div class="form-container">
+        <div class="form">
+            <form action="src/db/login_process.php" method="post">
+                <div id="emailHelp" class="form-text">Please use your organizational account provided by the admin</div>
+                <div class="mb-3">
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="index.php" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+            <div class="mt-3 text-center">
+                <a href="request.php" class="request-account-link">Request Account</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="src/js/plugins/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="src/js/materialize.min.js"></script>
+    <script type="text/javascript" src="src/js/plugins.min.js"></script>
 </body>
-<script src="src/js/login.js"></script>
 </html>

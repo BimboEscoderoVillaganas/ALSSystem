@@ -9,15 +9,28 @@
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="stylesheet" href="src/css/nav_active.css">
 
+
+    <!-- CORE CSS-->
+  <link href="src/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="src/css/style.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
     <title>Household Profiling</title>
 
 </head>
 <body>
+  <!-- Start Page Loading -->
+  <div id="loader-wrapper">
+      <div id="loader"></div>        
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+  </div>
+  <!-- End Page Loading -->
+
 <div class="landing-page">
         <header>
         <div class="container">
   <a href="#" class="logo">A Household Profiling System for <b>
-    <span class="red">A</span><span class="green">L</span><span class="blue">S</span>
+    <span class="red1">A</span><span class="green1">L</span><span class="blue1">S</span>
   </b></a>
   <ul class="links">
     <li><a href="index.php" class="active">Home</a></li>
@@ -49,4 +62,10 @@
 
 <!--Bootsrap js-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- jQuery Library -->
+<script type="text/javascript" src="src/js/plugins/jquery-1.11.2.min.js"></script>  
+<!--materialize js-->
+<script type="text/javascript" src="src/js/materialize.min.js"></script>
+<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+<script type="text/javascript" src="src/js/plugins.min.js"></script>
 </html>
