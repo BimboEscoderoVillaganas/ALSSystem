@@ -44,15 +44,40 @@
   <!-- End of top nav -->
 
   <!-- Side bar -->
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
-      <h5 class="navAdmin" class="offcanvas-title" id="offcanvasScrollingLabel">Admin</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <?php
+            session_start();
+            if (isset($_SESSION['username'])) {
+                echo '<h5 class="navAdmin offcanvas-title" id="offcanvasScrollingLabel">' . htmlspecialchars($_SESSION['username']) . '</h5>';
+            } else {
+                echo '<h5 class="navAdmin offcanvas-title" id="offcanvasScrollingLabel">Admin</h5>';
+            }
+        ?>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-    <a class="nav-link" href="form.php">Form</a>
+        <a class="nav-link" href="form.php">Form</a>
+        
+        <!-- Report Dropdown -->
+        <div class="dropdown mt-3">
+            <a class="nav-link dropdown-toggle" href="#" id="reportDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Report
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="reportDropdown">
+                <li><a class="dropdown-item" href="#">Brgy. Tankulan OSY</a></li>
+                <li><a class="dropdown-item" href="#">Brgy. Tankulan Population</a></li>
+                <li><a class="dropdown-item" href="#">OSY By Age</a></li>
+                <li><a class="dropdown-item" href="#">List of Interested in ALS</a></li>
+            </ul>
+        </div>
+        
+        <!-- Additional Links -->
+        <a class="nav-link" href="#">User Log</a>
+        <a class="nav-link" href="#">Log Out</a>
     </div>
-  </div>
+</div>
+
   <!-- End of side bar -->
 
   <div class="container mt-4">
